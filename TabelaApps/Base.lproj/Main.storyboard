@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Exa-do-3i0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--App-->
+        <scene sceneID="ioK-w2-gkc">
+            <objects>
+                <tableViewController id="JcX-0b-sPv" customClass="TabelaAppsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f0P-td-Bq7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="appDetalhes" selectionStyle="default" indentationWidth="10" reuseIdentifier="appCell" id="8Jy-eN-kfz" customClass="TabelaAppsTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Jy-eN-kfz" id="cDC-bV-G8z">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpi-6C-PsT">
+                                            <rect key="frame" x="93" y="0.0" width="374" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-fs-11t">
+                                            <rect key="frame" x="8" y="0.0" width="77" height="44"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwp-23-iTs">
+                                            <rect key="frame" x="93" y="23" width="374" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="appCategory" destination="Lwp-23-iTs" id="4rV-hP-0NB"/>
+                                    <outlet property="appImage" destination="IHc-fs-11t" id="dYI-Fa-E6Y"/>
+                                    <outlet property="appName" destination="vpi-6C-PsT" id="BKE-1s-cH7"/>
+                                    <segue destination="eUx-18-K1J" kind="show" identifier="appDetalhes" id="cCc-aE-CHS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JcX-0b-sPv" id="2kq-kk-mKu"/>
+                            <outlet property="delegate" destination="JcX-0b-sPv" id="QYd-z7-I1X"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="App" id="M8f-4V-5qy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lum-14-qL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="200"/>
+        </scene>
+        <!--Tabela Apps Detail View Controller-->
+        <scene sceneID="N55-Cv-D2C">
+            <objects>
+                <viewController id="eUx-18-K1J" customClass="TabelaAppsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fuy-tB-YjH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aEm-fx-DNf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U7Q-Yr-F3h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htq-Aa-hr9">
+                                <rect key="frame" x="180" y="130" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q08-Re-88j">
+                                <rect key="frame" x="333" y="517" width="46" height="30"/>
+                                <state key="normal" title="Volta">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="volta:" destination="eUx-18-K1J" eventType="touchUpInside" id="cM2-z4-Tdx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wN-uL-Pfy">
+                                <rect key="frame" x="279" y="327" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-Nl-lLG">
+                                <rect key="frame" x="279" y="382" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-Bh-2BV">
+                                <rect key="frame" x="279" y="436" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="htq-Aa-hr9" secondAttribute="centerX" id="37Q-cM-cky"/>
+                            <constraint firstItem="gdU-Bh-2BV" firstAttribute="centerX" secondItem="Q3O-Nl-lLG" secondAttribute="centerX" id="Dh4-0p-I8W"/>
+                            <constraint firstItem="htq-Aa-hr9" firstAttribute="centerX" secondItem="4wN-uL-Pfy" secondAttribute="centerX" id="bH1-Ok-hMR"/>
+                            <constraint firstItem="Q3O-Nl-lLG" firstAttribute="centerX" secondItem="4wN-uL-Pfy" secondAttribute="centerX" id="fKK-rv-M0T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appDetailCategory" destination="Q3O-Nl-lLG" id="usJ-NT-FeD"/>
+                        <outlet property="appDetailDescription" destination="gdU-Bh-2BV" id="VbP-WK-JzR"/>
+                        <outlet property="appDetailImage" destination="htq-Aa-hr9" id="5ch-Ih-K5i"/>
+                        <outlet property="appDetailName" destination="4wN-uL-Pfy" id="vfi-v1-V9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fru-m6-4Qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="206"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0g6-vG-Fcz">
+            <objects>
+                <navigationController id="Exa-do-3i0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EFX-Ey-Q0w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JcX-0b-sPv" kind="relationship" relationship="rootViewController" id="6KQ-Ll-KgM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4a-dA-LcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="200"/>
+        </scene>
+    </scenes>
+</document>
