@@ -17,6 +17,7 @@
 		3E3972201A9ED3990074AA03 /* TabelaAppsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E39721F1A9ED3990074AA03 /* TabelaAppsTableViewController.m */; };
 		3E3972231A9ED3BB0074AA03 /* TabelaAppsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3972221A9ED3BB0074AA03 /* TabelaAppsDetailViewController.m */; };
 		3E3972261A9ED99F0074AA03 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3972251A9ED99F0074AA03 /* App.m */; };
+		5CCB6AF31A9F6C01008B739B /* CriarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB6AF21A9F6C01008B739B /* CriarTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		3E3972221A9ED3BB0074AA03 /* TabelaAppsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelaAppsDetailViewController.m; sourceTree = "<group>"; };
 		3E3972241A9ED99F0074AA03 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		3E3972251A9ED99F0074AA03 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		5CCB6AF11A9F6C01008B739B /* CriarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriarTableViewController.h; sourceTree = "<group>"; };
+		5CCB6AF21A9F6C01008B739B /* CriarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriarTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				3E39721F1A9ED3990074AA03 /* TabelaAppsTableViewController.m */,
 				3E3972211A9ED3BB0074AA03 /* TabelaAppsDetailViewController.h */,
 				3E3972221A9ED3BB0074AA03 /* TabelaAppsDetailViewController.m */,
+				5CCB6AF11A9F6C01008B739B /* CriarTableViewController.h */,
+				5CCB6AF21A9F6C01008B739B /* CriarTableViewController.m */,
 				3E3972241A9ED99F0074AA03 /* App.h */,
 				3E3972251A9ED99F0074AA03 /* App.m */,
 			);
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCB6AF31A9F6C01008B739B /* CriarTableViewController.m in Sources */,
 				3E3971FB1A9ED2F30074AA03 /* AppDelegate.m in Sources */,
 				3E3971F81A9ED2F30074AA03 /* main.m in Sources */,
 				3E3972201A9ED3990074AA03 /* TabelaAppsTableViewController.m in Sources */,
@@ -430,6 +436,7 @@
 				3E3972171A9ED2F30074AA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E3972181A9ED2F30074AA03 /* Build configuration list for PBXNativeTarget "TabelaAppsTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				3E39721A1A9ED2F30074AA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

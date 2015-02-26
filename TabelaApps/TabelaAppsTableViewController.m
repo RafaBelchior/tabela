@@ -105,9 +105,29 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
+    
 }
 
+//- (IBAction)addApp:(UIBarButtonItem *)sender {
+//    [appData.appName addObject:repo];
+//    NSIndexPath *paths = [NSIndexPath indexPathForRow:[repository indexOfObject:repo] inSection:0];
+////    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[appData.appName count]-1 inSection:0]];
+//    [[self tableView] beginUpdates];
+//
+//    [[self tableView] insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
+//    [[self tableView] endUpdates];
+    
+//}
 
+//-(IBAction)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c{
+//    [[self tableView] beginUpdates];
+//    [appData.appName addObject:a];
+//    [appData.appCategory addObject:b];
+//    [appData.appDescription addObject:c];
+//    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[appData.appName count]-1 inSection:1]];
+//    [[self tableView] insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
+//    [[self tableView] endUpdates];
+//}
 
 #pragma mark - Navigation
 
