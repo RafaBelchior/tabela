@@ -2,13 +2,15 @@
 //  CriarTableViewController.m
 //  TabelaApps
 //
-//  Created by Humberto  Julião on 26/02/15.
+//  Created by Humberto  Julião on 27/02/15.
 //  Copyright (c) 2015 Rafael Souza Belchior da Silva. All rights reserved.
 //
 
 #import "CriarTableViewController.h"
+#import "App.h"
 
 @interface CriarTableViewController ()
+{App *appData;}
 
 @end
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appData = [App instance];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,13 +35,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }
@@ -97,4 +100,13 @@
 }
 */
 
+- (IBAction)cancel:(id)sender {
+    
+}
+
+- (IBAction)save:(id)sender {
+    
+    [appData addAppWithNome:_nome andCategoria:_categoria andDescricao:_descricao];
+    
+}
 @end

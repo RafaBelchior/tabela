@@ -10,5 +10,6 @@
 
 @interface TabelaAppsTableViewController : UITableViewController
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
 @end

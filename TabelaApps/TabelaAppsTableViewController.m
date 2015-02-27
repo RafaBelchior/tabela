@@ -118,16 +118,10 @@
 //    [[self tableView] endUpdates];
     
 //}
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue {
+    
+}
 
-//-(IBAction)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c{
-//    [[self tableView] beginUpdates];
-//    [appData.appName addObject:a];
-//    [appData.appCategory addObject:b];
-//    [appData.appDescription addObject:c];
-//    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[appData.appName count]-1 inSection:1]];
-//    [[self tableView] insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
-//    [[self tableView] endUpdates];
-//}
 
 #pragma mark - Navigation
 

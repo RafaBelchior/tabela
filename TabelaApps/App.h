@@ -23,4 +23,5 @@
 
 +(App *) instance;
 -(id) initWithObjects;
+-(IBAction)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c;
 @end

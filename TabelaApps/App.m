@@ -44,5 +44,15 @@ static App * instance = nil;
     }
     return self;
 }
+-(IBAction)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c{
+//    [[self tableView] beginUpdates];
+    [appName addObject:a];
+    [appCategory addObject:b];
+    [appDescription addObject:c];
+//    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath ]];//indexPathForRow:[appName count] inSection:1]];
+//    [[self tableView] insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
+//    [[self tableView] endUpdates];
+}
+
 
 @end
