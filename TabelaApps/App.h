@@ -23,5 +23,5 @@
 
 +(App *) instance;
 -(id) initWithObjects;
--(void)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c;
+-(BOOL)addAppWithArray:(NSMutableArray *)valor;
 @end

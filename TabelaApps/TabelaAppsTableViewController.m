@@ -30,7 +30,7 @@
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 -(void)viewWillAppear:(BOOL)animated{
-    [self.tableView reloadSectionIndexTitles];
+    [self.tableView reloadData];
 }
 
 //-(void)viewDidAppear:(BOOL)animated{

@@ -1,3 +1,4 @@
+
 //
 //  CriarTableViewController.m
 //  TabelaApps
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appData = [App instance];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -105,11 +107,18 @@
 }
 
 - (IBAction)save:(id)sender {
+    NSMutableArray *msa= [[NSMutableArray alloc] init];
+    [msa addObject:_nome.text];
+    [msa addObject:_descricao.text];
+    [msa addObject:_categoria.text];
+//    NSLog(@"%@",_nome.text);
+//    NSLog(@"%@",_categoria.text);
+//    NSLog(@"%@",_descricao.text);
     
-    [appData addAppWithNome:_nome.text andCategoria:_categoria.text andDescricao:_descricao.text];
-    NSLog(@"%@",_nome.text);
-    NSLog(@"%@",_categoria.text);
-    NSLog(@"%@",_descricao.text);
+    [appData addAppWithArray:msa];
+    
+    
+    
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
