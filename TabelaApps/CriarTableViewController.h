@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CriarTableViewController : UITableViewController
+@interface CriarTableViewController : UIViewController
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *nome;

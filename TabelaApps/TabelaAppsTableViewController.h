@@ -11,5 +11,6 @@
 @interface TabelaAppsTableViewController : UITableViewController
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+- (IBAction)add:(id)sender;
 
 @end

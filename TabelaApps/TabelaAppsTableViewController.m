@@ -29,6 +29,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadSectionIndexTitles];
+}
+
+//-(void)viewDidAppear:(BOOL)animated{
+//    [self.tableView numberOfRowsInSection:1];
+//
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -119,6 +127,10 @@
     
 //}
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
+    
+}
+
+- (IBAction)add:(id)sender {
     
 }
 

@@ -44,11 +44,12 @@ static App * instance = nil;
     }
     return self;
 }
--(IBAction)addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c{
+-(void) addAppWithNome:(NSString *)a andCategoria:(NSString *)b andDescricao:(NSString *)c{
 //    [[self tableView] beginUpdates];
-    [appName addObject:a];
-    [appCategory addObject:b];
-    [appDescription addObject:c];
+    [self.appName addObject:a];
+    [self.appCategory addObject:b];
+    [self.appDescription addObject:c];
+    [self.appImages addObject:@"contador.png"];
 //    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath ]];//indexPathForRow:[appName count] inSection:1]];
 //    [[self tableView] insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
 //    [[self tableView] endUpdates];
