@@ -23,6 +23,9 @@
 		5CE5F4A81AF41BEC006983BC /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4A71AF41BEC006983BC /* Commit.swift */; };
 		5CE5F4AA1AF41BEC006983BC /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4A91AF41BEC006983BC /* Badge.swift */; };
 		5CE5F4AC1AF41BED006983BC /* GitRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4AB1AF41BED006983BC /* GitRepositories.swift */; };
+		5CE5F4AF1AF44215006983BC /* persistenceHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4AE1AF44215006983BC /* persistenceHelp.swift */; };
+		5CE5F4B41AF45500006983BC /* Badge2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4B21AF45500006983BC /* Badge2.swift */; };
+		5CE5F4B51AF45500006983BC /* Repositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5F4B31AF45500006983BC /* Repositorio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		5CE5F4A71AF41BEC006983BC /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commit.swift; path = ../Commit.swift; sourceTree = "<group>"; };
 		5CE5F4A91AF41BEC006983BC /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Badge.swift; path = ../Badge.swift; sourceTree = "<group>"; };
 		5CE5F4AB1AF41BED006983BC /* GitRepositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitRepositories.swift; path = ../GitRepositories.swift; sourceTree = "<group>"; };
+		5CE5F4AE1AF44215006983BC /* persistenceHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = persistenceHelp.swift; sourceTree = "<group>"; };
+		5CE5F4B21AF45500006983BC /* Badge2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Badge2.swift; path = "../../../Downloads/GitHubSearch-master/testView/testView/Badge2.swift"; sourceTree = "<group>"; };
+		5CE5F4B31AF45500006983BC /* Repositorio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repositorio.swift; path = "../../../Downloads/GitHubSearch-master/testView/testView/Repositorio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,12 @@
 		5CE5F4611AF2B453006983BC /* testView */ = {
 			isa = PBXGroup;
 			children = (
+				5CE5F4B21AF45500006983BC /* Badge2.swift */,
+				5CE5F4B31AF45500006983BC /* Repositorio.swift */,
+				5CE5F4AB1AF41BED006983BC /* GitRepositories.swift */,
+				5CE5F4A91AF41BEC006983BC /* Badge.swift */,
+				5CE5F4A71AF41BEC006983BC /* Commit.swift */,
+				5CE5F4AE1AF44215006983BC /* persistenceHelp.swift */,
 				5CE5F4701AF2B453006983BC /* LaunchScreen.xib */,
 				5CE5F4661AF2B453006983BC /* testView.xcdatamodeld */,
 				5CE5F49D1AF2B8A9006983BC /* User.swift */,
@@ -143,9 +155,6 @@
 		5CE5F4AD1AF41BFF006983BC /* ClassesCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				5CE5F4AB1AF41BED006983BC /* GitRepositories.swift */,
-				5CE5F4A91AF41BEC006983BC /* Badge.swift */,
-				5CE5F4A71AF41BEC006983BC /* Commit.swift */,
 			);
 			name = ClassesCoreData;
 			path = testView;
@@ -253,7 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE5F4A81AF41BEC006983BC /* Commit.swift in Sources */,
+				5CE5F4B51AF45500006983BC /* Repositorio.swift in Sources */,
+				5CE5F4B41AF45500006983BC /* Badge2.swift in Sources */,
 				5CE5F4AA1AF41BEC006983BC /* Badge.swift in Sources */,
+				5CE5F4AF1AF44215006983BC /* persistenceHelp.swift in Sources */,
 				5CE5F4981AF2B645006983BC /* DetailViewController.swift in Sources */,
 				5CE5F4971AF2B645006983BC /* MasterViewController.swift in Sources */,
 				5CE5F4951AF2B645006983BC /* NetworkController.swift in Sources */,

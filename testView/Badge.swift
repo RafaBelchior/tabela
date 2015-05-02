@@ -11,8 +11,8 @@ import CoreData
 
 class Badge: NSManagedObject {
 
-    @NSManaged var name: String
-    @NSManaged var color: String
+    @NSManaged var name: String!
+    @NSManaged var color: String!
     @NSManaged var pertence: GitRepositories
 
 }
