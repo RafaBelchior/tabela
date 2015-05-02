@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Badge: NSManagedObject {
+class BadgeGit: NSManagedObject {
 
     @NSManaged var name: String!
     @NSManaged var color: String!
